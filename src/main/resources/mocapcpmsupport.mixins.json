@@ -5,9 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ActionTypeAccessor",
-    "ActionTypeMixin",
-    "FakePlayerNetHandlerMixin",
-    "PlayedSceneMixin"
+    "FakePlayerNetHandlerMixin"
   ],
   "client": [
   ],
