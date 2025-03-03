@@ -4,8 +4,12 @@
   "version": "${version}",
   "name": "MocapCPMSupport",
   "description": "Adds Customizable Player Models support to Motion Capture",
-  "authors": [],
-  "contact": {},
+  "authors": [
+    "BluSpring"
+  ],
+  "contact": {
+    "sources": "https://github.com/BluSpring/MocapCPMSupport"
+  },
   "license": "MIT",
   "icon": "assets/mocapcpmsupport/icon.png",
   "environment": "*",
@@ -24,6 +28,6 @@
     "fabricloader": ">=${loader_version}",
     "fabric-language-kotlin": ">=${kotlin_loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=${minecraft_version}"
   }
 }
