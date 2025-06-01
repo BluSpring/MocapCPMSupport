@@ -5,7 +5,7 @@ import com.tom.cpm.shared.network.NetH;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
-@Mixin(targets = "com.mt1006.mocap.utils.FakePlayer$FakePlayerNetHandler")
+@Mixin(targets = "net.mt1006.mocap.utils.FakePlayer$FakePlayerNetHandler")
 public class FakePlayerNetHandlerMixin implements NetH.ServerNetH {
     @Unique private PlayerData mocapCpm$cpmPlayerData;
 

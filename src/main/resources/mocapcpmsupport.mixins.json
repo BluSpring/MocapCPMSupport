@@ -4,6 +4,7 @@
   "package": "xyz.bluspring.mocapcpmsupport.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ActionContextAccessor",
     "ActionTypeAccessor",
     "FakePlayerNetHandlerMixin"
   ],

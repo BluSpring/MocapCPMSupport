@@ -14,7 +14,7 @@ base {
     archivesName.set(project.property("archives_base_name") as String)
 }
 
-val targetJavaVersion = 17
+val targetJavaVersion = 21
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
@@ -52,8 +52,8 @@ dependencies {
     modImplementation("net.fabricmc:fabric-language-kotlin:${project.property("kotlin_loader_version")}")
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
-    modImplementation("maven.modrinth:motion-capture:275Xprwt") // 1.3.8-fabric-1.20.1
-    modImplementation("maven.modrinth:custom-player-models:1.20v0.6.21a-fabric")
+    modImplementation("maven.modrinth:motion-capture:1.4-alpha-8-fabric-1.21.1")
+    modImplementation("maven.modrinth:custom-player-models:1.21v0.6.22a-fabric")
     modApi(include("com.github.Chocohead:Fabric-ASM:v2.3")!!)
     api(include("net.minecraftforge:unsafe:0.2.+")!!)
 }
