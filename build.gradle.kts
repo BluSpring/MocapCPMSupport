@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "2.1.10"
-    id("fabric-loom") version "1.10-SNAPSHOT"
+    kotlin("jvm") version "2.2.20"
+    id("fabric-loom") version "1.11-SNAPSHOT"
     id("maven-publish")
 }
 
@@ -53,7 +53,7 @@ dependencies {
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
     modImplementation("maven.modrinth:motion-capture:1.4-alpha-8-fabric-1.21.1")
-    modImplementation("maven.modrinth:custom-player-models:1.21v0.6.22a-fabric")
+    modImplementation("maven.modrinth:custom-player-models:1.21v0.6.24a-fabric")
     modApi(include("com.github.Chocohead:Fabric-ASM:v2.3")!!)
     api(include("net.minecraftforge:unsafe:0.2.+")!!)
 }
